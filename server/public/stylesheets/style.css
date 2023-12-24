@@ -1,0 +1,13 @@
+body {
+  margin-top: 3rem;
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.btn-primary--margin {
+  margin-top: 2rem;
+}
