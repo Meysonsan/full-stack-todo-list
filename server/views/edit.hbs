@@ -1,0 +1,29 @@
+{{!-- <form class="form" action="/todo" method="post">
+    <div class="form-group">
+        <label for="title" class="form-label">Title</label>
+        <input type="text" class="form-control" id="title" placeholder="Enter a todo">
+    </div>
+</form> --}}
+<form class="form" action="/todo" method="post">
+    <div class="mb-3">
+        <label for="title" class="form-label">Title:</label>
+        <input value="{{title}}" type="text" class="form-control" id="title" placeholder="Enter a todo" name="title">
+    </div>
+    <div class="mb-3">
+        <label for="description" class="form-label">Description:</label>
+        <textarea value="{{description}}" class="form-control" id="description" rows="3" placeholder="Enter a description" name="description"></textarea>
+    </div>
+    <div class="mb-3">
+        <label for="priority" class="form-label">Priority:</label>
+        <select class="form-select" id="priority" name="priority">
+            {{#select priority}}
+            <option value="1">Priority 1</option>
+            <option value="2">Priority 2</option>
+            <option value="3">Priority 3</option>
+            <option value="4">Priority 4</option>
+            <option value="5">Priority 5</option>
+            {{/select}}
+        </select>
+    </div>
+    <button type="submit" class="btn btn-danger">UPDATE</button>
+</form>
